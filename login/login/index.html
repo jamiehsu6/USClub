@@ -12,7 +12,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     </head>
     <body>
@@ -30,7 +30,7 @@
                 <img src="../img/uscclubhublogo.png">
             </div>
             <form id="login-form">
-                <h1>login</h1>
+                <h1>Login</h1>
                 <div class = "main-inputs">
                     <input 
                         type="number"
@@ -38,6 +38,7 @@
                         length="10"
                         size="10"
                         pattern="[1]{1}[0-9]{9}"
+                        minlength="10"
                         maxlength="10"
                         placeholder="USCid"
                         required/>
@@ -59,12 +60,12 @@
                         required/>
                     </br></br>
                     <div class = "profile-img">
-                        choose a profile picture</br>
+                        Choose a profile picture:</br></br>
                         <label for="profile1">
                             <input
                             type="radio"
                             id="profile1"
-                            name="profile1"
+                            name="profile"
                             value="small">
                             <img src="../profile/profile.png" alt="profile1">
                         </label>
@@ -73,7 +74,7 @@
                             <input
                             type="radio"
                             id="profile2"
-                            name="profile2"
+                            name="profile"
                             value="small">
                             <img src="../profile/profile.png" alt="profile2">
                         </label>
@@ -81,7 +82,7 @@
                             <input
                             type="radio"
                             id="profile3"
-                            name="profile3"
+                            name="profile"
                             value="small">
                             <img src="../profile/profile.png" alt="profile3">
                         </label>
@@ -89,7 +90,7 @@
                     </div>
                     </br></br>
                     <div id="buttons">
-                        <button type="submit" id = "#login-submit">login</button>
+                        <button type="submit" id = "#login-submit">Login</button>
                     </div>
                 </div>
             </form>

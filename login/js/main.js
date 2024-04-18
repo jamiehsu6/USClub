@@ -10,10 +10,11 @@ $(function(){
         let fname = localStorage.getItem('fname');
         let lname = localStorage.getItem('lname');
     
-        $("#account").html("<h1>Hi " + fname +"!</h1>");
-        $("#account").css({"top": "40px", "font-size": "18px"});
+        $("#welcome").html("<h1>Hi " + fname +"!</h1>");
+        $("#welcome").css({"padding-top": "5px", "font-size": "28px"});
 
         $("#icon-button").html(fname.charAt(0)+fname.charAt(1));
     }
+
 });
 
