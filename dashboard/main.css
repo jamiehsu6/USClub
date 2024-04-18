@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    background-color: #FCF9E9;
+    width: 500px;
+    text-align: center;
+}
+
+svg {
+    padding: 0px 20px;
+    color: #000000;
+}
+
+svg:hover {
+    color: #AAE1FF;
+    transition: color 0.1s ease-out;
+}
+
+.event {
+    background-color: #A3FF8C;
+    width: 300px;
+}
+
+.calendar {
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+    padding: 0px 20px;
+}
+
+h2 {
+    font-weight: 600;
+    padding: 0px 30px;
+    size: 30px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0px 40px;
+    text-decoration-line: underline;
+    color: #7B7B7B;
+}
+
+h4:hover {
+    color: #AAE1FF;
+    transition: color 0.1s ease-out;
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 16px;
+    padding: 10px 10px;
+}
