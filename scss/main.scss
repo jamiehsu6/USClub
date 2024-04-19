@@ -11,7 +11,7 @@ $light-blue: rgb(186, 223, 255);
 $font-size: 16px;
 $font-style: "Roboto", sans-serif;
 
-//OFFICIAL MAIN AND BODY HERE 
+//OFFICIAL MAIN AND BODY HERE USE THIS AS REFERENCE 
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
@@ -36,12 +36,12 @@ main{
         }
     }
     width: 100%;
-    max-width: 520px;
+    max-width: 500px;
     min-height: 100vh;
     margin: 0 auto;
     background-color: white;
 }
-
+///////////////////login////////////////////////////
 #account {
     top: 200px;
     right: 40px;
@@ -169,4 +169,48 @@ main{
 
         }
     }
+}
+
+//////////////////bsaPage////////////////////////////
+.header img{
+    width: 500px;
+    height: 190px;
+}
+
+.title h2{
+    font-size: 30px;
+    padding-left: 53px;
+    padding-top: 30px;
+}
+
+.clubImg img{
+    width: 250px;
+    height: 180px;
+    left: 50%;
+    top: -205px;
+    position: relative; 
+    clip-path: circle();
+}
+
+.about h3{
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 35px;
+    top: -150px;
+    position: relative; 
+    line-height: 35px;
+}
+
+.iconGrids{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -300px;
+    padding-left: 46px;
+    bottom: 110px;
+    position: relative;
+}
+
+.grid-item img{
+    width: 180px;
+    height: 180px;
 }
