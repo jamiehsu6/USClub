@@ -11,7 +11,7 @@ $light-blue: rgb(186, 223, 255);
 $font-size: 16px;
 $font-style: "Roboto", sans-serif;
 
-//OFFICIAL MAIN AND BODY HERE USE THIS AS REFERENCE 
+//OFFICIAL MAIN AND BODY *HERE USE THIS AS REFERENCE* 
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
@@ -37,7 +37,7 @@ main{
     }
     width: 100%;
     max-width: 500px;
-    min-height: 100vh;
+    min-height: 120vh;
     margin: 0 auto;
     background-color: white;
 }
@@ -171,7 +171,7 @@ main{
     }
 }
 
-//////////////////bsaPage////////////////////////////
+//////////////////bsa + innoD + Redcross + tmg Page////////////////////////////
 .header img{
     width: 500px;
     height: 190px;
@@ -213,4 +213,55 @@ main{
 .grid-item img{
     width: 180px;
     height: 180px;
+}
+
+// ////////////////sparkSC page//////////////////////
+
+.sparkheader img{
+    width: 500px;
+    height: 190px;
+}
+
+.sparktitle h1{
+    font-size: 35px;
+    padding-left: 55px;
+    padding-top: 30px;
+}
+
+.sparkclubImg img{
+    width: 50%;
+    height: 50%;
+    left: 45%;
+    top: -205px;
+    position: relative; 
+}
+
+.sparkabout h3{
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 35px;
+    top: -210px;
+    position: relative; 
+    line-height: 35px;
+}
+
+.sparkiconGrids{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -300px;
+    padding-left: 46px;
+    bottom: 170px;
+    position: relative;
+}
+
+.sparkgrid-item img{
+    width: 180px;
+    height: 180px;
+}
+
+//////////volleyball Page////////////////
+.volleyballtitle h1{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
 }
