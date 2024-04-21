@@ -37,10 +37,43 @@ main{
     }
     width: 100%;
     max-width: 500px;
-    min-height: 120vh;
+    min-height: 130vh;
     margin: 0 auto;
     background-color: white;
 }
+///////////////////navBar///////////////////////////
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    bottom: 15px;
+    width: 15%;
+    right: 630px;
+    border-radius: 50px;
+    height: 50px;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .icon-container {
+    display: flex;           
+    justify-content: center;  
+    gap: 35px;  
+    padding-top: 10px;  
+  }
+
+  
+  .icon-container .fa:hover:before {
+    color: #AAE1FF;
+  }
 ///////////////////login////////////////////////////
 #account {
     top: 200px;
