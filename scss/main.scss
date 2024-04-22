@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+/*smooth scroll here*/
+html {
+    scroll-behavior: smooth;
+}
+
+$light-blue: rgb(186, 223, 255);
+$font-size: 16px;
+$font-style: "Roboto", sans-serif;
+
+//OFFICIAL MAIN AND BODY *HERE USE THIS AS REFERENCE* 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    margin: 2px; 
+
+    animation: background-change 8s infinite;
+}
+
+main{
+    font-family: $font-style;
+    .top {
+        //background-color: #768be8;
+        background-color: #AAE1FF;
+        border-radius: 0px 0px 20px 20px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+
+        img {
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    width: 100%;
+    max-width: 500px;
+    min-height: 130vh;
+    margin: 0 auto;
+    background-color: white;
+}
+///////////////////navBar///////////////////////////
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    bottom: 15px;
+    width: 15%;
+    right: 630px;
+    border-radius: 50px;
+    height: 50px;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .icon-container {
+    display: flex;           
+    justify-content: center;  
+    gap: 35px;  
+    padding-top: 10px;  
+  }
+
+  
+  .icon-container .fa:hover:before {
+    color: #AAE1FF;
+  }
+///////////////////login////////////////////////////
+#account {
+    top: 200px;
+    right: 40px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:rgba(87, 170, 242, 0.54);
+    padding: 10px;
+    
+    a {
+        background-color:aliceblue;
+        color:rgb(91, 126, 255);
+        text-decoration: none;
+        padding: 5px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+#icon {
+    //top: 260px;
+    //position: relative;
+    display: flex;
+    position: absolute;
+
+    #icon-button {
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
+}
+#user-menu {
+    padding: 5px;
+    background-color: aliceblue;
+    font-weight: bold;
+    top: 305px;
+    right: 5px;
+    position: absolute;
+    a {
+        color:rgb(91, 126, 255);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration:underline;
+        }
+    }
+}
+
+
+#login-form {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+.main-inputs {
+    input {
+        width: 320px;
+        font-size: 18px;
+        display: inline-block;
+        margin-bottom: 15px;
+        background-color: white;
+        border: none;
+        border-bottom: 1px solid black;
+
+    }
+
+    .profile-img {
+        /* HIDE RADIO */
+        [type=radio] { 
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        /* IMAGE STYLES */
+        [type=radio] + img {
+            cursor: pointer;
+            width: 50%;
+        }
+        
+        /* CHECKED STYLES */
+        [type=radio]:checked + img {
+            outline: 2px solid #f00;
+            border-radius: 50%;
+        }
+        label {
+            display: inline-block;
+            text-align: center;
+            width: 100px;
+            margin-right: 5px;
+        }
+    }
+    
+}
+#buttons {
+    margin-bottom: 20px;
+    text-align: center;
+    button {
+        font-weight: bold;
+        //border:rgb(91, 126, 255);
+        //border: 5px;
+        border-radius: 18px;
+        font-size: 20px;
+        padding: 8px;
+        width: 100px;
+        background-color: rgb(0, 0, 0);
+        color:#ffffff;
+        border: none;
+        font-family: $font-style;
+        
+        
+        &:hover {
+            background-color:#5a7fde;
+            color: white;
+            cursor: pointer;
+
+        }
+    }
+}
+
+//////////////////bsa + innoD + Redcross + tmg Page////////////////////////////
+.header img{
+    width: 500px;
+    height: 190px;
+}
+
+.title h2{
+    font-size: 30px;
+    padding-left: 53px;
+    padding-top: 30px;
+}
+
+.clubImg img{
+    width: 250px;
+    height: 180px;
+    left: 50%;
+    top: -205px;
+    position: relative; 
+    clip-path: circle();
+}
+
+.about h3{
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 35px;
+    top: -150px;
+    position: relative; 
+    line-height: 35px;
+}
+
+.iconGrids{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -300px;
+    padding-left: 46px;
+    bottom: 110px;
+    position: relative;
+}
+
+.grid-item img{
+    width: 180px;
+    height: 180px;
+}
+
+// ////////////////sparkSC page//////////////////////
+
+.sparkheader img{
+    width: 500px;
+    height: 190px;
+}
+
+.sparktitle h1{
+    font-size: 35px;
+    padding-left: 55px;
+    padding-top: 30px;
+}
+
+.sparkclubImg img{
+    width: 50%;
+    height: 50%;
+    left: 45%;
+    top: -205px;
+    position: relative; 
+}
+
+.sparkabout h3{
+    font-size: 22px;
+    padding-left: 50px;
+    padding-right: 35px;
+    top: -210px;
+    position: relative; 
+    line-height: 35px;
+}
+
+.sparkiconGrids{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -300px;
+    padding-left: 46px;
+    bottom: 170px;
+    position: relative;
+}
+
+.sparkgrid-item img{
+    width: 180px;
+    height: 180px;
+}
+
+//////////volleyball Page////////////////
+.volleyballtitle h1{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
+}

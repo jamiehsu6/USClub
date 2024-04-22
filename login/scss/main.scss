@@ -4,7 +4,7 @@ $dark-blue: #0c2083;
 $light-blue: rgb(186, 223, 255);
 $trans-dark: linear-gradient(#b8c4ff, #7bbfff);
 $font-size: 16px;
-$font-style: Georgia, 'Times New Roman', Times, serif;
+$font-style: "Roboto", sans-serif;
 
 
 * {
@@ -80,20 +80,14 @@ html {
     border-radius: 5px;
 }
 .main-inputs {
-    label {
-        display: inline-block;
-        text-align: right;
-        width: 100px;
-        margin-right: 5px;
-    }
     input {
-        width: 200px;
+        width: 320px;
         font-size: 18px;
         display: inline-block;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         background-color: white;
         border: none;
-        text-decoration-line: underline;
+        border-bottom: 1px solid black;
 
     }
 
@@ -115,9 +109,13 @@ html {
         /* CHECKED STYLES */
         [type=radio]:checked + img {
             outline: 2px solid #f00;
+            border-radius: 50%;
         }
         label {
+            display: inline-block;
+            text-align: center;
             width: 100px;
+            margin-right: 5px;
         }
     }
     
@@ -158,8 +156,10 @@ body{
 }
 
 main{
+    font-family: $font-style;
     .top {
-        background-color: #768be8;
+        //background-color: #768be8;
+        background-color: #AAE1FF;
         border-radius: 0px 0px 20px 20px;
         padding-bottom: 15px;
         margin-bottom: 15px;
@@ -171,13 +171,13 @@ main{
         }
     }
     width: 100%;
-    max-width: 500px;
+    max-width: 520px;
     min-height: 100vh;
     margin: 0 auto;
     background-color: white;
 
     h1 {
-        font-family:'Courier New', Courier, monospace;
+        font-family: "Roboto", sans-serif;
     }
 
     p {

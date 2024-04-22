@@ -13,18 +13,19 @@ body{
     font-family: "Roboto", sans-serif;;
 }
 
-.header img{
+
+.sparkheader img{
     width: 500px;
     height: 190px;
 }
 
-.title h1{
+.sparktitle h1{
     font-size: 35px;
     padding-left: 55px;
     padding-top: 30px;
 }
 
-.clubImg img{
+.sparkclubImg img{
     width: 50%;
     height: 50%;
     left: 45%;
@@ -32,7 +33,7 @@ body{
     position: relative; 
 }
 
-.about h3{
+.sparkabout h3{
     font-size: 22px;
     padding-left: 50px;
     padding-right: 35px;
@@ -41,7 +42,7 @@ body{
     line-height: 35px;
 }
 
-.iconGrids{
+.sparkiconGrids{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: -300px;
@@ -50,7 +51,7 @@ body{
     position: relative;
 }
 
-.grid-item img{
+.sparkgrid-item img{
     width: 180px;
     height: 180px;
 }
