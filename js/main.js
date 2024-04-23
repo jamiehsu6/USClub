@@ -1,3 +1,5 @@
+
+//emily -- login functionality - profile picture and sign out
 $(function(){
 
     $("#user-menu").hide();
