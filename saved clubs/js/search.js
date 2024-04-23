@@ -1,3 +1,4 @@
+$(function(){
 const search = () =>{
     const searchbox = document.getElementById("searchBar").value.toUpperCase();
     const storeitems = document.getElementById("club-list")
@@ -20,6 +21,9 @@ const search = () =>{
 };
 
 
+
+
+
     
 
 
@@ -27,6 +31,6 @@ const search = () =>{
 
 
 
-
+});
 
 
