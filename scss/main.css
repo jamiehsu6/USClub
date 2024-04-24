@@ -18,20 +18,9 @@ main {
   font-family: "Roboto", sans-serif;
   width: 100%;
   max-width: 500px;
-  min-height: 130vh;
+  min-height: 110vh;
   margin: 0 auto;
   background-color: white;
-}
-main .top {
-  background-color: #AAE1FF;
-  border-radius: 0px 0px 20px 20px;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-}
-main .top img {
-  width: 50%;
-  margin: 0 auto;
-  display: block;
 }
 
 .navbar {
@@ -64,6 +53,18 @@ main .top img {
 
 .icon-container .fa:hover:before {
   color: #AAE1FF;
+}
+
+.login-top {
+  background-color: #AAE1FF;
+  border-radius: 0px 0px 20px 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.login-top img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
 }
 
 #account {
@@ -108,7 +109,6 @@ main .top img {
   position: absolute;
 }
 #user-menu a {
-  color: rgb(91, 126, 255);
   text-decoration: none;
 }
 #user-menu a:hover {
@@ -176,7 +176,7 @@ main .top img {
   font-family: "Roboto", sans-serif;
 }
 #buttons button:hover {
-  background-color: #5a7fde;
+  background-color: #AAE1FF;
   color: white;
   cursor: pointer;
 }
@@ -271,16 +271,6 @@ main .top img {
   font-size: 30px;
   padding-left: 50px;
   padding-top: 30px;
-}
-
-svg {
-  padding: 0px 20px;
-  color: #000000;
-}
-
-svg:hover {
-  color: #AAE1FF;
-  transition: color 0.1s ease-out;
 }
 
 .calendar {
