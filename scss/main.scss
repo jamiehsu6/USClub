@@ -43,7 +43,7 @@ main{
 }
 ///////////////////navBar///////////////////////////
 .navbar {
-    background-color: black;
+    background-color: #AAE1FF;
     overflow: hidden;
     position: fixed;
     bottom: 15px;
@@ -56,7 +56,7 @@ main{
   .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -72,7 +72,7 @@ main{
 
   
   .icon-container .fa:hover:before {
-    color: #AAE1FF;
+    color: white;
   }
 ///////////////////login////////////////////////////
 #account {
