@@ -1,3 +1,115 @@
+main{
+    font-family: "Roboto";
+}
+
+.pagetitle{
+    text-align: center;
+    padding: 10px;
+}
+
+.searchbar{
+   width: 100%;
+   padding: 9px;
+   text-align: center;
+ 
+   
+   input{
+    color: grey;
+   }
+}
+
+#name{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.star{
+    float: right;
+    text-align: center;
+}
+
+
+
+.checklist{
+  padding: 30px;
+  margin: 0 auto;
+  align-items: vertical;
+  text-align: center;
+}
+
+#fa-regular{
+    width: 50px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+    text-align: center;        
+}
+
+.wrapper{
+  padding: 20px;
+}
+
+.club{
+    width: 400px;
+   border: 1px solid grey; 
+   height: 50px;
+   font-weight: 100;
+}
+
+.rect{
+  border: 1px solid rgb(161, 86, 161);
+  width: 20px;
+  height: 50px;
+  background-color: rgb(161, 86, 161);
+  float: left;
+  margin-left: 0 auto;
+}
+
+.rect1{
+    border: 1px solid rgba(105, 105, 255, 0.8);
+    width: 20px;
+    height: 50px;
+    background-color: rgba(105, 105, 255, 0.8);
+    float: left;
+  }
+
+
+.rect2{
+    border: 1px solid rgb(252, 203, 211);
+    width: 20px;
+    height: 50px;
+    background-color: rgb(252, 203, 211);
+    float: left;
+
+}
+
+.rect3{
+    border: 1px solid rgb(241, 91, 91);
+    width: 20px;
+    height: 50px;
+    background-color: rgb(241,91,91);
+    float: left;
+}
+
+.rect4{
+    border: 1px solid rgb(161, 86, 161);
+    width: 20px;
+    height: 50px;
+    background-color: rgb(161, 86, 161);
+    float: left;
+}
+
+.rect5{
+    border: 1px solid rgb(116, 199, 116);
+    width: 20px;
+    height: 50px;
+    background-color: rgb(116, 199, 116);
+    float: left;
+}
+
+
+
+
 * {
     box-sizing: border-box;
 }
