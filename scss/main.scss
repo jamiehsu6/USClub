@@ -134,22 +134,9 @@ body{
 
 main{
     font-family: $font-style;
-    .top {
-        //background-color: #768be8;
-        background-color: #AAE1FF;
-        border-radius: 0px 0px 20px 20px;
-        padding-bottom: 15px;
-        margin-bottom: 15px;
-
-        img {
-            width: 50%;
-            margin: 0 auto;
-            display: block;
-        }
-    }
     width: 100%;
     max-width: 500px;
-    min-height: 130vh;
+    min-height: 110vh;
     margin: 0 auto;
     background-color: white;
 }
@@ -182,12 +169,24 @@ main{
     padding-top: 10px;  
   }
 
-
   
   .icon-container .fa:hover:before {
     color: #AAE1FF;
   }
 ///////////////////login////////////////////////////
+.login-top {
+    //background-color: #768be8;
+    background-color: #AAE1FF;
+    border-radius: 0px 0px 20px 20px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+}
 #account {
     top: 200px;
     right: 40px;
@@ -231,7 +230,6 @@ main{
     right: 5px;
     position: absolute;
     a {
-        color:rgb(91, 126, 255);
         text-decoration: none;
 
         &:hover {
@@ -259,8 +257,6 @@ main{
         background-color: white;
         border: none;
         border-bottom: 1px solid black;
-
-
 
     }
 
@@ -311,7 +307,7 @@ main{
         
         
         &:hover {
-            background-color:#5a7fde;
+            background-color:#AAE1FF;
             color: white;
             cursor: pointer;
 
@@ -419,64 +415,12 @@ main{
 
 //dashboard//
 
-.navbar {
-    position: fixed;
-    bottom: 0;
-    padding: 20px;
-    background-color: #FCF9E9;
-    text-align: center;
-}
-
-svg {
-    padding: 0px 20px;
-    color: #000000;
-}
-
-svg:hover {
-    color: #AAE1FF;
-    transition: color 0.1s ease-out;
-}
-
-.event {
-    background-color: #A3FF8C;
-    width: 250px;
-}
-
 .calendar {
     text-align: center;
 }
 
-.dashboard h1, dashboard h2, dashboard h3, dashboard h4 {
+#dashboardh1 {
     font-family: "Roboto", sans-serif;
-}
-
-.dashboard h1 {
-    font-weight: 800;
+    font-weight: 600;
     padding: 0px 20px;
 }
-
-.dashboard h2 {
-    font-weight: 600;
-    padding: 0px 30px;
-    size: 30px;
-}
-
-.dashboard h4 {
-    font-weight: 400;
-    font-size: 16px;
-    padding: 0px 40px;
-    text-decoration-line: underline;
-    color: #7B7B7B;
-}
-
-.dashboard h4:hover {
-    color: #AAE1FF;
-    transition: color 0.1s ease-out;
-}
-
-h3 {
-    font-weight: 100;
-    font-size: 16px;
-    padding: 10px 10px;
-}
-
