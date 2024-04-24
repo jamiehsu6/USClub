@@ -4,9 +4,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=devide-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="css/search.css"> 
+        <link rel="stylesheet" type="text/css" href="../css/main.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <script src="https://kit.fontawesome.com/7a4b9a1495.js" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
@@ -17,7 +19,7 @@
    <div class="title"><h1>Club Search</h1></div> 
 
    <div class="searchbar">
-      <div id="find"><p>Find the right community for you...</p></div>
+    <input placeholder="Find your community..." id="searchBar" name="searchBar" type="text">
    </div>
 
    <div class="checklist">
@@ -35,7 +37,7 @@
    name="arts"
    required />
   <label for="arts"
-  >Arts</label>
+  >Arts</label> 
 <br/>
 
 <input
@@ -52,7 +54,7 @@ id="health"
 name="health"
 required />
 <label for="health"
->Health</label>
+>Health</label> 
 
 <br/>
 <input
@@ -76,41 +78,60 @@ required />
 
 <h2>Clubs</h2>
 
-<div class="wrapper">
+<div class="wrapper" id="club-list">
+
+<div class="club">
+    <img id="star" src="images/star.png">
 <div class="rect"></div>
-<div class="TMG">
     <p>Trojan Marketing Group</p>
-    <img src="images/yellowstar.png">
+  
 </div>
+
+
 <br/>
+
+<div class="club">
+    <img id="star" src="images/star.png">
 <div class="rect1"></div>
-<div class="volleyball">
     <p>Women's Volleyball Club</p>
-    <img src="images/yellowstar.png">
+  
 </div>
+
 <br/>
+
+<div class="club">
+    <img id="star" src="images/star.png">
 <div class="rect2"></div>
-<div class="innovation">
-    <p> Innovation Design</p>
-    <img src="images/yellowstar.png">
+    <p> Innovation Design Club</p>
+
 </div>
+
 <br/>
+
+<div class="club">
+    <img id="star" src="images/star.png">
 <div class="rect3"></div>
-<div class="redcross">
-    <p>Red Cross</p>
-    <img src="./images/whitestar.png">
+    <p>Red Cross Club</p>
+   
 </div>
+
 <br/>
+
+<div class="club">
+    <img id="star" src="images/star.png">
 <div class="rect4"></div>
-<div class="spark">
     <p>Spark SC</p>
-    <img src="./images/whitestar.png">
+   
 </div>
+
 <br/>
+
+<div class="club">
+    <img id="star" src="images/star.png">
 <div class="rect5"></div>
 <div class="spatial">
-    <p>Spatial SC</p>
-    <img src="./images/whitestar.png">
+    <p>Black Student Alliance</p>
+
 </div>
 
  
@@ -125,12 +146,6 @@ required />
 
 
 </main>
-<footer>
-    <div class="navbar">
-    <div id="home"><i class="fa-solid fa-house"></i> </div> 
-     <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
-     <div id="list"><i class="fa-solid fa-list"></i></div>
-    </div>
-</footer>
+
 <body>
 <html>
