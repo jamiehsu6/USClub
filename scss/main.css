@@ -273,14 +273,6 @@ main .top img {
   padding-top: 30px;
 }
 
-.navbar {
-  position: fixed;
-  bottom: 0;
-  padding: 20px;
-  background-color: #FCF9E9;
-  text-align: center;
-}
-
 svg {
   padding: 0px 20px;
   color: #000000;
@@ -291,31 +283,26 @@ svg:hover {
   transition: color 0.1s ease-out;
 }
 
-.event {
-  background-color: #A3FF8C;
-  width: 250px;
-}
-
 .calendar {
   text-align: center;
 }
 
-.dashboard h1, dashboard h2, dashboard h3, dashboard h4 {
+.dashboardh1, dashboardh2, dashboardh3, dashboardh4 {
   font-family: "Roboto", sans-serif;
 }
 
-.dashboard h1 {
+.dashboardh1 {
   font-weight: 800;
   padding: 0px 20px;
 }
 
-.dashboard h2 {
+.dashboardh2 {
   font-weight: 600;
   padding: 0px 30px;
   size: 30px;
 }
 
-.dashboard h4 {
+.dashboardh4 {
   font-weight: 400;
   font-size: 16px;
   padding: 0px 40px;
@@ -323,12 +310,12 @@ svg:hover {
   color: #7B7B7B;
 }
 
-.dashboard h4:hover {
+.dashboardh4:hover {
   color: #AAE1FF;
   transition: color 0.1s ease-out;
 }
 
-.dashboard h3 {
+.dashboardh3 {
   font-weight: 100;
   font-size: 16px;
   padding: 10px 10px;
