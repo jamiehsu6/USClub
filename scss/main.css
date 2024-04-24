@@ -277,40 +277,8 @@ main {
   text-align: center;
 }
 
-.dashboardh1, dashboardh2, dashboardh3, dashboardh4 {
+#dashboardh1 {
   font-family: "Roboto", sans-serif;
-}
-
-.dashboardh1 {
   font-weight: 800;
   padding: 0px 20px;
-}
-
-.dashboardh2 {
-  font-weight: 600;
-  padding: 0px 30px;
-  size: 30px;
-}
-
-.dashboardh4 {
-  font-weight: 400;
-  font-size: 16px;
-  padding: 0px 40px;
-  text-decoration-line: underline;
-  color: #7B7B7B;
-}
-
-.dashboardh4:hover {
-  color: #AAE1FF;
-  transition: color 0.1s ease-out;
-}
-
-.dashboardh3 {
-  font-weight: 100;
-  font-size: 16px;
-  padding: 10px 10px;
-}
-
-.dashboard {
-  margin: 20px;
 }/*# sourceMappingURL=main.css.map */
