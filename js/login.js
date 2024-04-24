@@ -3,11 +3,10 @@ $(function(){
 
     $("#login-form").on("submit", function(e){
         e.preventDefault();
-        window.location = "../index.html";
+        window.location = "dashboard/index.html";
 
         localStorage.setItem('fname', $('#fname').val());
-        localStorage.setItem('lname', $('#lname').val());
-        localStorage.setItem('profile-img', $('#'))
+        //localStorage.setItem('profile-img', $('#'))
     })
 
     $("#user-menu").hide();
