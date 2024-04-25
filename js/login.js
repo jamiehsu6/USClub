@@ -7,10 +7,10 @@ $(function(){
 
         localStorage.setItem('fname', $('#fname').val());
         //localStorage.setItem('profile-img', $('#'))
+
+        //FIX THIS
+        localStorage.setItem('profile',$('#profile').val());
     })
 
     $("#user-menu").hide();
-    $("#icon-button").click(function() {
-        $("user-menu").slideToggle("fast");
-    });
 });
