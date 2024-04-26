@@ -18,7 +18,7 @@
    <div class="pagetitle"><h1>Saved Clubs</h1></div> 
 
 
-   <a href="index.html">Clubs</a>
+   <a href="clubsearch.html">Clubs</a>
 
 <div class="wrapper" id="club-list">
 
@@ -132,7 +132,7 @@ function syncCheckboxState() {
         });
 
     // Fetch the content of the other HTML file
-    fetch('saved.html')
+    fetch('clubsearch.html')
         .then(response => response.text())
         .then(html => {
             // Inject the content into the current document
