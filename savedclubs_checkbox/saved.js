@@ -1,12 +1,3 @@
-let tmgState = localStorage.getItem('tmgState');
-let wvcState = localStorage.getItem('wvcState');
-let innodState = localStorage.getItem('innodState');
-let rdcState = localStorage.getItem('rdcState');
-let sparkState = localStorage.getItem('sparkState');
-let bsaState = localStorage.getItem('bsaState');
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
 
     // Retrieve the state of each checkbox from Local Storage
@@ -38,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Checkbox changed');
             div.style.display = 'block'; 
             localStorage.setItem(localStorageKey, 'checked');
-        } else {
+        }else{
             console.log('Checkbox none');
             div.style.display = 'none';
             localStorage.setItem(localStorageKey, 'unchecked');
@@ -75,21 +66,27 @@ if (bsaState === 'checked') {
 
 // Add event listeners to checkboxes to toggle div visibility and update Local Storage
 tmg.addEventListener('change', function() {
+    console.log('tmg toggle');
     toggleDiv(tmg, 'tmgState');
 });
 wvc.addEventListener('change', function() {
+    console.log('wvc toggle');
     toggleDiv(wvc, 'wvcState');
 });
 innod.addEventListener('change', function() {
+    console.log('innod toggle');
     toggleDiv(innod, 'innodState');
 });
 rdc.addEventListener('change', function() {
+    console.log('rdc toggle');
     toggleDiv(rdc, 'rdcState');
 });
 spark.addEventListener('change', function() {
+    console.log('spark toggle');
     toggleDiv(spark, 'sparkState');
 });
 bsa.addEventListener('change', function() {
+    console.log('bsa toggle');
     toggleDiv(bsa, 'bsaState');
 });
 
