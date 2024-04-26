@@ -23,6 +23,7 @@
     <input placeholder="Find your community..." id="searchBar" name="searchBar" type="text" onkeyup="search()">
    </div>
 
+<!--
    <div class="checklist">
     <input
     type="checkbox"
@@ -75,7 +76,7 @@ required />
 >Technology</label>
 
 </div>
-
+-->
 
 <div class="pagetitle"><h2>Clubs</h2></div>
 
@@ -190,10 +191,10 @@ function syncCheckboxState() {
             checkbox.addEventListener('change', function() {
                 localStorage.setItem(this.id, this.checked);
                 console.log('attached');
-                if (!this.checked) {
-                localStorage.removeItem(this.id); // Remove item if unchecked
-                console.log('remove');
-                }
+                //if (!this.checked) {
+                //localStorage.removeItem(this.id); // Remove item if unchecked
+                //console.log('remove');
+                //}
             });
         });
 

@@ -130,10 +130,10 @@ function syncCheckboxState() {
         document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
             checkbox.addEventListener('change', function() {
                 localStorage.setItem(this.id, this.checked);
-                if (!this.checked) {
-                localStorage.removeItem(this.id); // Remove item if unchecked
-                console.log('remove');
-                }
+                //if (!this.checked) {
+                //localStorage.removeItem(this.id); // Remove item if unchecked
+                //console.log('remove');
+                //}
             });
         });
 
