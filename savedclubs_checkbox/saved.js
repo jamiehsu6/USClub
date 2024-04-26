@@ -64,6 +64,7 @@ if (bsaState === 'checked') {
     document.getElementById('bsa-saved').style.display = 'block';
 }
 
+
 // Add event listeners to checkboxes to toggle div visibility and update Local Storage
 tmg.addEventListener('change', function() {
     console.log('tmg toggle');

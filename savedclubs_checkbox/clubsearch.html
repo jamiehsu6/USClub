@@ -23,6 +23,7 @@
     <input placeholder="Find your community..." id="searchBar" name="searchBar" type="text" onkeyup="search()">
    </div>
 
+<!--
    <div class="checklist">
     <input
     type="checkbox"
@@ -75,18 +76,17 @@ required />
 >Technology</label>
 
 </div>
-
+-->
 
 <div class="pagetitle"><h2>Clubs</h2></div>
 
 <div class="wrapper" id="club-list">
 
 <div class="club">
-    <input
+   <input
    type="checkbox"
    id="tmg"
-   name="tmg"
-   required />
+   name="tmg" />
 <div class="rect"></div>
     <p id="name">Trojan Marketing Group</p>
 </div>
@@ -98,8 +98,7 @@ required />
     <input
    type="checkbox"
    id="wvc"
-   name="wvc"
-   required />
+   name="wvc" />
     <div class="rect1"></div>
     <p id="name">Women's Volleyball Club</p>
 </div>
@@ -110,8 +109,7 @@ required />
     <input
     type="checkbox"
     id="innod"
-    name="innod"
-    required />
+    name="innod" />
      <div class="rect2"></div>
     <p id="name"> Innovation Design Club</p>
 
@@ -123,8 +121,7 @@ required />
     <input
    type="checkbox"
    id="rdc"
-   name="rdc"
-   required />
+   name="rdc" />
      <div class="rect3"></div>
     <p id="name">Red Cross Club</p>
    
@@ -136,8 +133,7 @@ required />
     <input
    type="checkbox"
    id="spark"
-   name="spark"
-   required />
+   name="spark" />
     <div class="rect4"></div>
     <p id="name">Spark SC</p>
    
@@ -149,8 +145,7 @@ required />
     <input
    type="checkbox"
    id="bsa"
-   name="bsa"
-   required />
+   name="bsa" />
     <div class="rect5"></div>
      <div class="spatial">
     <p id="name">Black Student Alliance</p>
@@ -171,7 +166,7 @@ required />
 
 <script>
 
-// Function to sync checkbox state from localStorage
+// sync checkbox state (local storage)
 function syncCheckboxState() {
             document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
                 const state = localStorage.getItem(checkbox.id);
@@ -182,17 +177,18 @@ function syncCheckboxState() {
             });
         }
 
-        // Sync checkbox state when page loads
+        //sync when load
         syncCheckboxState();
         
-        // Add event listeners to checkboxes to update localStorage
+        //add localstorage event listeners
         document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
             checkbox.addEventListener('change', function() {
                 localStorage.setItem(this.id, this.checked);
-                if (!this.checked) {
-                localStorage.removeItem(this.id); // Remove item if unchecked
-                console.log('remove');
-                }
+                console.log('attached');
+                //if (!this.checked) {
+                //localStorage.removeItem(this.id); // Remove item if unchecked
+                //console.log('remove');
+                //}
             });
         });
 
@@ -202,7 +198,7 @@ function syncCheckboxState() {
         .then(html => {
             // Inject the content into the current document
             document.getElementById('contentContainer').innerHTML = html;
-            
+            console.log('content container');
             // Add event listener for when the injected content is fully loaded
             document.getElementById('contentContainer').addEventListener('DOMContentLoaded', function() {
                 // Now you can interact with the injected content here
