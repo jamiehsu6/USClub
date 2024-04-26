@@ -10,6 +10,8 @@ html {
 $light-blue: rgb(186, 223, 255);
 $font-size: 16px;
 $font-style: "Roboto", sans-serif;
+$yellow: #ffc72c;
+$dark-blue: rgb(17, 17, 62);
 
 //OFFICIAL MAIN AND BODY *HERE USE THIS AS REFERENCE* 
 body{
@@ -195,14 +197,14 @@ main{
         font-size: 20px;
         padding: 8px;
         width: 100px;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(17, 17, 62);
         color:#ffffff;
         border: none;
         font-family: $font-style;
         
         
         &:hover {
-            background-color:#AAE1FF;
+            background-color:#ffc72c;
             color: white;
             cursor: pointer;
 
@@ -315,7 +317,7 @@ main{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    border-radius: 15px;
     
 
 }
@@ -347,6 +349,7 @@ main{
 #dashboardh1 {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
+    font-size: 25px;
     padding: 0px 20px;
     // background: white;
     // border-radius: 0px 0px 30px 30px;
