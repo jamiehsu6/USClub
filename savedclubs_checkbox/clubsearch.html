@@ -171,7 +171,7 @@ required />
 
 <script>
 
-// Function to sync checkbox state from localStorage
+// sync checkbox state (local storage)
 function syncCheckboxState() {
             document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
                 const state = localStorage.getItem(checkbox.id);
@@ -182,13 +182,14 @@ function syncCheckboxState() {
             });
         }
 
-        // Sync checkbox state when page loads
+        //sync when load
         syncCheckboxState();
         
-        // Add event listeners to checkboxes to update localStorage
+        //add localstorage event listeners
         document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
             checkbox.addEventListener('change', function() {
                 localStorage.setItem(this.id, this.checked);
+                console.log('attached');
                 if (!this.checked) {
                 localStorage.removeItem(this.id); // Remove item if unchecked
                 console.log('remove');
@@ -202,7 +203,7 @@ function syncCheckboxState() {
         .then(html => {
             // Inject the content into the current document
             document.getElementById('contentContainer').innerHTML = html;
-            
+            console.log('content container');
             // Add event listener for when the injected content is fully loaded
             document.getElementById('contentContainer').addEventListener('DOMContentLoaded', function() {
                 // Now you can interact with the injected content here

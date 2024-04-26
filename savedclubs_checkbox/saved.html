@@ -115,6 +115,7 @@
 function syncCheckboxState() {
             document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
                 const state = localStorage.getItem(checkbox.id);
+                console.log('attached');
                 if (state !== null) {
                     checkbox.checked = (state === 'true');
                     console.log('sync');
@@ -142,7 +143,7 @@ function syncCheckboxState() {
         .then(html => {
             // Inject the content into the current document
             document.getElementById('contentContainer').innerHTML = html;
-            
+            console.log('content container');
             // Add event listener for when the injected content is fully loaded
             document.getElementById('contentContainer').addEventListener('DOMContentLoaded', function() {
                 // Now you can interact with the injected content here
