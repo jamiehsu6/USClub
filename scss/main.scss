@@ -4,7 +4,12 @@ main{
 
 .pagetitle{
     text-align: center;
-    padding: 10px;
+    padding: 5px;
+}
+
+.rightArrow1{
+    float: right;
+    padding: 5px;
 }
 
 .searchbar{
@@ -17,6 +22,7 @@ main{
     color: grey;
    }
 }
+
 
 #name{
     text-align: center;
@@ -46,8 +52,10 @@ main{
 }
 
 .wrapper{
-  padding: 20px;
+  padding: 50px;
 }
+
+
 
 .club1{
     width: 400px;
@@ -55,6 +63,7 @@ main{
    height: 50px;
    font-weight: 100;
    text-align: center;
+   
 }
 
 .club2{
@@ -64,6 +73,7 @@ main{
    font-weight: 100;
    text-align: center;
 }
+
 
 .club3{
     width: 400px;
@@ -79,6 +89,7 @@ main{
    height: 50px;
    font-weight: 100;
    text-align: center;
+  
 }
 
 .club5{
@@ -166,7 +177,6 @@ $font-style: "Roboto", sans-serif;
 
 //OFFICIAL MAIN AND BODY *HERE USE THIS AS REFERENCE* 
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: black;
     margin: 2px; 
 
@@ -196,7 +206,7 @@ main{
 }
 ///////////////////navBar///////////////////////////
 .navbar {
-    background-color: black;
+    background-color: #AAE1FF;
     overflow: hidden;
     position: fixed;
     bottom: 15px;
@@ -226,7 +236,7 @@ main{
 
   
   .icon-container .fa:hover:before {
-    color: #AAE1FF;
+    color: white;
   }
 ///////////////////login////////////////////////////
 #account {
@@ -251,26 +261,28 @@ main{
     }
 }
 #icon {
-    //top: 260px;
-    //position: relative;
-    display: flex;
-    position: absolute;
+    float: right;
+    margin-right: 20px;
 
-    #icon-button {
-        padding: 10px;
+    #icon-button {        
+        width: 50px;
+        height: 50px;
+        
         border-radius: 50%;
         cursor: pointer;
         color: white;
         background-color: black;
+        object-fit: cover;
+        right: 0px;
     }
 }
 #user-menu {
+    margin-left: 420px;
     padding: 5px;
     background-color: aliceblue;
-    font-weight: bold;
-    top: 305px;
-    right: 5px;
+    top: 210px;
     position: absolute;
+    color: black;
     a {
         color:rgb(91, 126, 255);
         text-decoration: none;
@@ -279,6 +291,10 @@ main{
             text-decoration:underline;
         }
     }
+}
+#welcome {
+    padding-left: 20px;
+    margin-top: 5px;
 }
 
 
@@ -489,7 +505,7 @@ svg:hover {
 
 .dashboard h1, dashboard h2, dashboard h3, dashboard h4 {
     font-family: "Roboto", sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     padding: 0px 20px;
 }
 
