@@ -26,15 +26,17 @@ main{
     min-height: 110vh;
     margin: 0 auto;
     background-color: white;
+   
 }
 ///////////////////navBar///////////////////////////
 .navbar {
-    background-color: #AAE1FF;
+    background-color: rgb(17, 17, 62);
     overflow: hidden;
     position: fixed;
     bottom: 15px;
     width: 15%;
     right: 630px;
+    // margin: 0 auto;
     border-radius: 50px;
     height: 50px;
   }
@@ -58,12 +60,12 @@ main{
 
   
   .icon-container .fa:hover:before {
-    color: white;
+    color: #ffc72c;
   }
 ///////////////////login////////////////////////////
 .login-top {
     //background-color: #768be8;
-    background-color: #AAE1FF;
+    background-color: rgb(17, 17, 62);
     border-radius: 0px 0px 20px 20px;
     padding-bottom: 15px;
     margin-bottom: 15px;
@@ -306,18 +308,33 @@ main{
 
 
 
-//dashboard//
+///////dashboard///////
+.bannerPic img{
+    width: 88%;
+    height: 160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    
+
+}
+
+.whiteBackground{
+    // border-top: 15px solid darkblue;
+    background-color: white;
+    top: 100px;
+    height: 110px;
+    margin-top: -50px;
+     border-radius: 30px 30px 0px 0px;
+
+}
 
 .dashboard-top {
-    //background-color: #768be8;
-    background-color: #AAE1FF;
-    border-radius: 0px 0px 30px 30px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-    height: 120px;
-
+    background-color: rgb(17, 17, 62);
+    height: 160px;
     img {
-        width: 20%;
+        width: 17%;
         margin: 0 auto;
         display: block;
     }
@@ -331,6 +348,9 @@ main{
     font-family: "Roboto", sans-serif;
     font-weight: 600;
     padding: 0px 20px;
+    // background: white;
+    // border-radius: 0px 0px 30px 30px;
+
 }
 
 ///////////search//////////
