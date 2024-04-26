@@ -1,44 +1,58 @@
+$(function(){
 
+ let allClubs = {
+  "Trojan Marketing Group":
+  ".club1",
+  "Women's Volleyball Club":
+   ".club2",
+  "Innovative Design Club":
+  ".club3",
+  "Red Cross Club":
+  ".club4",
+  "Spark SC":
+  ".club5",
+  "Black Student Alliance":
+  ".club6"
+  }
+
+  let clubList = "";
+
+  for (let key in allClubs){
+    if(key.startsWith(query)){
+     clubList += "<div>" +allClubs[key] + "</div>";
+    }
+  }
+    $("#club-list").html(clubList);
   
-   //const clublist = document.getElementById('#club-list');
 
-   //const loadclubs = async () => {
-      //const response = await fetch('/savedclubs/search');
-      //const clubs = await response.json();
-  // }
+   $("searchbar").keyup(function(){
+      let query =  $("searchbar").val().toLowerCase();
 
 
-//const search = () =>{
-   // const searchbox = document.getElementById("searchBar").value.toUpperCase();
-    //const storeitems = document.getElementById("club-list")
-    //const club = document.querySelectorAll(".club")
-    //const cname = storeitems.getElementsByTagName("name")
+      clubList = "";
+      for (let key in allClubs){
+         if(key.startsWith(query)){
 
-    //let i = [ 
-      //"Trojan Marketing Group",
-      //"Women's Volleyball Club",
-      //"Innovative Design Club",
-      //"Red Cross Club",
-      //"Spark SC",
-      //"Black Student Alliance",
-    //]
+          clubList += "<div>" +allClubs[key] + "</div>";
+         }
+      }
+      $("#club-list").html(clubList);
+
+   });
+
+  }); 
 
 
 
-   // for( var i=0; i < cname.length; i++){
-     //   let match = club[i].getElementsByTagName("club")[0];
 
-       //if(match){
-         //let textvalue= match.textContent || match.innerHTML
 
-         //if(textvalue.toUpperCase().indexOf(searchbox) > -1){
-           // club[i].style.display = "";
-         //}else{
-           // club[i].style.display = "none";
-         //}
-       //}
-    //}
-//};
+
+
+
+
+
+
+
 
 
 
