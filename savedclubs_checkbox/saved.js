@@ -1,3 +1,12 @@
+let tmgState = localStorage.getItem('tmgState');
+let wvcState = localStorage.getItem('wvcState');
+let innodState = localStorage.getItem('innodState');
+let rdcState = localStorage.getItem('rdcState');
+let sparkState = localStorage.getItem('sparkState');
+let bsaState = localStorage.getItem('bsaState');
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
 
     // Retrieve the state of each checkbox from Local Storage
