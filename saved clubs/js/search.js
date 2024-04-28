@@ -2,35 +2,41 @@ $(function(){
 
  let allClubs = {
   "Trojan Marketing Group":
-  $(".club1"),
+  ".club1",
   "Women's Volleyball Club":
-   $(".club2"),
+   ".club2",
   "Innovative Design Club":
-  $(".club3"),
+  ".club3",
   "Red Cross Club":
-  $(".club4"),
+  ".club4",
   "Spark SC":
-  $(".club5"),
+  ".club5",
   "Black Student Alliance":
-  $(".club6")
+  ".club6"
   }
 
-  let clubList = $(".clubs");
+  let clubList = "";
 
   for (let key in allClubs){
-     clubList.append($(allClubs[key]));
+    if(key.startsWith(query)){
+     clubList += "<div>" +allClubs[key] + "</div>";
+    }
   }
+    $("#club-list").html(clubList);
   
-   $("#searchBar").keyup(function(){
-      let query =  $(this).val().toLowerCase();
-      clubList.children().hide();
+
+   $("searchbar").keyup(function(){
+      let query =  $("searchbar").val().toLowerCase();
+
+
+      clubList = "";
       for (let key in allClubs){
-         if(key.toLowerCase().startsWith(query)){
-         $(allClubs[key]).show();
-          
+         if(key.startsWith(query)){
+
+          clubList += "<div>" +allClubs[key] + "</div>";
          }
       }
-
+      $("#club-list").html(clubList);
 
    });
 
