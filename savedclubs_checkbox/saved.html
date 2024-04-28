@@ -39,7 +39,8 @@
     <input
    type="checkbox"
    id="wvc"
-   name="wvc" />
+   name="wvc"
+   required />
     <div class="rect1"></div>
     <p id="name">Women's Volleyball Club</p>
 </div>
@@ -50,7 +51,8 @@
     <input
     type="checkbox"
     id="innod"
-    name="innod" />
+    name="innod"
+    required />
      <div class="rect2"></div>
     <p id="name"> Innovation Design Club</p>
 
@@ -62,7 +64,8 @@
     <input
    type="checkbox"
    id="rdc"
-   name="rdc" />
+   name="rdc"
+   required />
      <div class="rect3"></div>
     <p id="name">Red Cross Club</p>
    
@@ -74,7 +77,8 @@
     <input
    type="checkbox"
    id="spark"
-   name="spark" />
+   name="spark"
+   required />
     <div class="rect4"></div>
     <p id="name">Spark SC</p>
    
@@ -86,7 +90,8 @@
     <input
    type="checkbox"
    id="bsa"
-   name="bsa" />
+   name="bsa"
+   required />
     <div class="rect5"></div>
      <div class="spatial">
     <p id="name">Black Student Alliance</p>
@@ -110,7 +115,6 @@
 function syncCheckboxState() {
             document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
                 const state = localStorage.getItem(checkbox.id);
-                console.log('attached');
                 if (state !== null) {
                     checkbox.checked = (state === 'true');
                     console.log('sync');
@@ -125,10 +129,10 @@ function syncCheckboxState() {
         document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
             checkbox.addEventListener('change', function() {
                 localStorage.setItem(this.id, this.checked);
-                //if (!this.checked) {
-                //localStorage.removeItem(this.id); // Remove item if unchecked
-                //console.log('remove');
-                //}
+                if (!this.checked) {
+                localStorage.removeItem(this.id); // Remove item if unchecked
+                console.log('remove');
+                }
             });
         });
 
@@ -138,7 +142,7 @@ function syncCheckboxState() {
         .then(html => {
             // Inject the content into the current document
             document.getElementById('contentContainer').innerHTML = html;
-            console.log('content container');
+            
             // Add event listener for when the injected content is fully loaded
             document.getElementById('contentContainer').addEventListener('DOMContentLoaded', function() {
                 // Now you can interact with the injected content here

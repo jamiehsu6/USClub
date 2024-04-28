@@ -174,8 +174,6 @@ html {
 $light-blue: rgb(186, 223, 255);
 $font-size: 16px;
 $font-style: "Roboto", sans-serif;
-$yellow: #ffc72c;
-$dark-blue: rgb(17, 17, 62);
 
 //OFFICIAL MAIN AND BODY *HERE USE THIS AS REFERENCE* 
 body{
@@ -205,17 +203,15 @@ main{
     min-height: 130vh;
     margin: 0 auto;
     background-color: white;
-   
 }
 ///////////////////navBar///////////////////////////
 .navbar {
-    background-color: rgb(17, 17, 62);
+    background-color: #AAE1FF;
     overflow: hidden;
     position: fixed;
     bottom: 15px;
     width: 15%;
     right: 630px;
-    // margin: 0 auto;
     border-radius: 50px;
     height: 50px;
   }
@@ -240,7 +236,7 @@ main{
 
   
   .icon-container .fa:hover:before {
-    color: #ffc72c;
+    color: white;
   }
 ///////////////////login////////////////////////////
 #account {
@@ -272,12 +268,11 @@ main{
         width: 50px;
         height: 50px;
         
-        //border-radius: 50%;
+        border-radius: 50%;
         cursor: pointer;
         color: white;
-        //background-color: black;
-        background-size: cover;
-        background-image: url(../login/profile/profile1.png);
+        background-color: black;
+        object-fit: cover;
         right: 0px;
     }
 }
@@ -366,7 +361,7 @@ main{
         font-size: 20px;
         padding: 8px;
         width: 100px;
-        background-color: rgb(17, 17, 62);
+        background-color: rgb(0, 0, 0);
         color:#ffffff;
         border: none;
         font-family: $font-style;
@@ -479,27 +474,7 @@ main{
 
 
 
-///////dashboard///////
-.bannerPic img{
-    width: 88%;
-    height: 160px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px;
-    
-
-}
-
-.whiteBackground{
-    // border-top: 15px solid darkblue;
-    background-color: white;
-    top: 100px;
-    height: 110px;
-    margin-top: -50px;
-     border-radius: 30px 30px 0px 0px;
-
-}
+//dashboard//
 
 .navbar {
     position: fixed;
@@ -531,11 +506,7 @@ svg:hover {
 .dashboard h1, dashboard h2, dashboard h3, dashboard h4 {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
-    font-size: 25px;
     padding: 0px 20px;
-    // background: white;
-    // border-radius: 0px 0px 30px 30px;
-
 }
 
 .dashboard h2 {

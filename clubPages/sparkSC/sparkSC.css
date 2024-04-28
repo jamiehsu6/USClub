@@ -1,0 +1,54 @@
+main {
+  width: 100%;
+  max-width: 500px;
+  min-height: 120vh;
+  margin: 0 auto;
+  background-color: white;
+}
+
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.sparkheader img {
+  width: 500px;
+  height: 190px;
+}
+
+.sparktitle h1 {
+  font-size: 35px;
+  padding-left: 55px;
+  padding-top: 30px;
+}
+
+.sparkclubImg img {
+  width: 50%;
+  height: 50%;
+  left: 45%;
+  top: -205px;
+  position: relative;
+}
+
+.sparkabout h3 {
+  font-size: 22px;
+  padding-left: 50px;
+  padding-right: 35px;
+  top: -210px;
+  position: relative;
+  line-height: 35px;
+}
+
+.sparkiconGrids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: -300px;
+  padding-left: 46px;
+  bottom: 170px;
+  position: relative;
+}
+
+.sparkgrid-item img {
+  width: 180px;
+  height: 180px;
+}/*# sourceMappingURL=sparkSC.css.map */
