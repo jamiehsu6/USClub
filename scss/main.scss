@@ -358,6 +358,7 @@ main{
     padding-left: 70px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
     margin-top: 20px;
+    background-color: rgba(250, 235, 215, 0.14);
 
 }
 .calendar {
@@ -392,6 +393,7 @@ width: 185px;
    margin-left: 50px;
    padding-left: 70px;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+   background-color: rgba(250, 235, 215, 0.14);
 }
 .reminder2{
 width: 185px;
@@ -402,6 +404,7 @@ width: 185px;
    margin-top: -165px;
    padding-left: 70px;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+   background-color: rgba(250, 235, 215, 0.14);
 }
 .reminder3{
     width: 185px;
@@ -412,6 +415,7 @@ width: 185px;
    padding-left: 70px;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
    margin-top: 20px;
+   background-color: rgba(250, 235, 215, 0.14);
    
     }
 .reminder4{
@@ -423,6 +427,7 @@ width: 185px;
    margin-top: -165px;
    padding-left: 70px;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+   background-color: rgba(250, 235, 215, 0.14);
 }
 
 .reminder1 h3, .reminder2 h3, .reminder3 h3, .reminder4 h3{
@@ -621,11 +626,12 @@ width: 185px;
 
 .club{
     border: 1px solid rgba(128, 128, 128, 0.384); 
-    height: 100px;
+    height: 170px;
     border-radius: 10px;
     font-weight: 400;
     font-size: 16px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+    background-color: rgba(250, 235, 215, 0.157);
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -635,7 +641,9 @@ width: 185px;
 
  #name {
     grid-column: span 3;
-    margin-top: 20px;
+    margin-top: 140px;
+    margin-left: -70px;
+    font-size: 13px;
  }
 
  .club:hover{
@@ -671,4 +679,40 @@ width: 185px;
 
 #bsa {
     accent-color: rgb(165, 249, 165);
+}
+
+.fa.fa-line-chart{
+    margin-top: 55px;
+    margin-left: -92px;
+    
+}
+
+.fa-solid.fa-volleyball{
+    margin-top: 53px;
+    margin-left: -98px;
+}
+
+.fa.fa-cogs{
+    margin-top: 53px;
+    margin-left: -103px;
+
+}
+
+.fa-solid.fa-square-plus{
+    margin-top: 53px;
+    margin-left: -93px;
+
+}
+
+.fa-solid.fa-wand-sparkles{
+    margin-top: 53px;
+    margin-left: -95px;
+
+}
+
+.fa-solid.fa-hand-back-fist{
+    margin-top: 53px;
+    margin-left: -95px;
+
+
 }
