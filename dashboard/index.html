@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="icon" type="image/png" href="img/favicon.png" />
         <link rel="stylesheet" type="text/css" href="../css/main.css">
 
         <script src="../js/jquery-3.7.1.min.js"></script>
@@ -68,8 +67,8 @@
                 <div class="navbar">
                     <div class = "icon-container">
                     <a href = "index.html"><i class="fa fa-home" aria-hidden="true" style="font-size:30px;color:white;"></i></a>
-                    <a href = "../savedclubs_checkbox/clubsearch.html"><i class="fa fa-bars" aria-hidden="true" style="font-size:30px;color:white;"></i></a>
-                    <a href = "../savedclubs_checkbox/saved.html"><i class="fa fa-star" aria-hidden="true" style="font-size:30px;color:white;"></i></a>
+                    <a href = "../savedclubs_checkbox/clubsearch.html"><i class="fa fa-bars" aria-hidden="true" style="font-size:25px;color:white;"></i></a>
+                    <a href = "../savedclubs_checkbox/saved.html"><i class="fa fa-star" aria-hidden="true" style="font-size:25px;color:white;"></i></a>
                 </div>
 
                
@@ -112,13 +111,28 @@
                 
                 
                 
-            </div>
+        </div>
 
 
 
         </div>
 
         </main>
+
+        <!--/////////PROFILE IMAGE Javascript here///////////-->
+        <script>
+            // Retrieve the selected profile value from local storage
+            var selectedProfile = localStorage.getItem('profile');
+    
+            // Set the background image of the #icon-button element based on the selected profile
+            if (selectedProfile === 'profile1') {
+                document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile1.png')";
+            } else if (selectedProfile === 'profile2') {
+                document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile2.png')";
+            } else if (selectedProfile === 'profile3') {
+                document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile3.png')";
+            }
+        </script>
 
     </body>
 
