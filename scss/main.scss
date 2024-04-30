@@ -543,21 +543,6 @@ width: 185px;
     text-align: center;        
 }
 
-.wrapper{
-  padding: 10px;
-  padding-bottom: 80px;
-  padding-left: 60px;
-}
-
-.club{
-   width: 380px;
-   border: 1px solid rgba(128, 128, 128, 0.384); 
-   height: 60px;
-   border-radius: 10px;
-   
-//    font-weight: 100;
-}
-
 .rect{
   border: 1px solid rgb(250, 119, 250);
   width: 20px;
@@ -623,3 +608,69 @@ width: 185px;
 .fa-arrow-circle-right:hover:before {
     color: blue;
   }
+
+.wrapper{
+    padding: 45px;
+    padding-bottom: 80px;
+}
+
+.clubs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-auto-rows: minmax(auto);
+}
+
+.club{
+    border: 1px solid rgba(128, 128, 128, 0.384); 
+    height: 100px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(auto);
+ }
+
+ #name {
+    grid-column: span 3;
+    margin-top: 20px;
+ }
+
+ .club:hover{
+    background-color: rgb(234, 234, 234)
+ }
+
+ input[type=checkbox] {
+    margin: 20px;
+    line-height: normal;
+    width: 30px;
+    height: 30px;
+}
+
+#tmg {
+    accent-color: rgb(250, 119, 250);
+}
+
+#wvc {
+    accent-color: rgb(141, 141, 254);
+}
+
+#innod {
+    accent-color: rgb(252, 203, 211);
+}
+
+#rdc {
+    accent-color: rgb(255, 3, 3);
+}
+
+#spark {
+    accent-color: rgb(255, 247, 0);
+}
+
+#bsa {
+    accent-color: rgb(165, 249, 165);
+}
