@@ -6,8 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="https://kit.fontawesome.com/7a4b9a1495.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="../css/main.css"> 
-        
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="saved.js"></script> 
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
@@ -31,13 +32,13 @@
          <a href="saved.html">Saved Clubs</a>
       
          <div class="searchbar">
-          <input placeholder="Find your community..." id="searchBar" name="searchBar" type="text" onkeyup="search()">
+          <input placeholder="Find your community..." id="searchBar" name="searchBar" type="text">
          </div>
       
          
       
       <div class="wrapper clubs" id="club-list">
-          <section class="club" id="tmg-color">
+          <section class="club" id="club1">
               <input 
               type="checkbox"
               id="tmg"
@@ -45,7 +46,7 @@
               <p id="name">Trojan Marketing Group</p>
           </section>
       
-          <section class="club">
+          <section class="club" id="club2">
               <input
               type="checkbox"
               id="wvc"
@@ -53,7 +54,7 @@
               <p id="name">Women's Volleyball Club</p>
           </section>
       
-          <section class="club">
+          <section class="club" id="club3">
               <input
               type="checkbox"
               id="innod"
@@ -61,7 +62,7 @@
               <p id="name"> Innovation Design Club</p>
           </section>
       
-          <section class="club">
+          <section class="club" id="club4">
               <input
               type="checkbox"
               id="rdc"
@@ -69,7 +70,7 @@
               <p id="name">Red Cross Club</p>
           </section>
       
-          <section class="club">
+          <section class="club" id="club5">
               <input
               type="checkbox"
               id="spark"
@@ -77,7 +78,7 @@
               <p id="name">Spark SC</p>
           </section>
       
-          <section class="club">
+          <section class="club" id="club6">
               <input
               type="checkbox"
               id="bsa"
@@ -136,7 +137,7 @@
               .catch(error => console.error('Error fetching content:', error));
       </script>
       
-      <script src="saved.js"></script> 
+     
     </div>
 
   
