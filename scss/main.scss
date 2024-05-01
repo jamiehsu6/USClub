@@ -101,12 +101,12 @@ main{
 }
 #icon {
     position: absolute;
-    top: 37px;
-    margin-left:423px;
+    top: 20px;
+    margin-left:430px;
 }
 #icon-button {        
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
     border-radius: 50%;
     cursor: pointer;
@@ -114,18 +114,14 @@ main{
     background-image: url('../login/profile/profile1.png');
 }
 #user-menu {
-    border-radius: 5px;
-    margin-left: 380px;
-    padding: 10px;
-    background-color: white;
-    filter:drop-shadow(2px 2px #9b9b9bb5);
-    top: 95px;
+    margin-left: 420px;
+    padding: 5px;
+    background-color: aliceblue;
+    top: 210px;
     position: absolute;
+    color: black;
     a {
         text-decoration: none;
-        color: black;
-        font-weight:600;
-        font-size: 20px;
 
         &:hover {
             text-decoration:underline;
