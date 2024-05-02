@@ -16,6 +16,7 @@
         <!--js for profile image-->
         <script src="../js/jquery-3.7.1.min.js"></script>
         <script src="../js/main.js"></script>
+        <script src="saved.js"></script> 
     </head>
 
 <main>
@@ -56,60 +57,42 @@
 <!-- 
    <a href="clubsearch.html">Clubs</a> -->
 
-   <div class="wrapper clubs" id="club-list">
-    <section class="club" id="tmg-saved" style="display:none;">
-        <input 
-        type="checkbox"
-        id="tmg"
-        name="tmg" />
+   <div class="wrapper clubs" id="saved-clubs">
+    <div class="club">
+        <input type="checkbox" value="0" />
         <p id="name"> <b>Trojan Marketing Group</b></p>
         <i class="fa fa-line-chart" aria-hidden="true" style="font-size:50px;"></i>
-    </section>
+    </div>
 
-    <section class="club" id="wvc-saved" style="display:none;">
-        <input
-        type="checkbox"
-        id="wvc"
-        name="wvc" />
+    <div class="club">
+        <input type="checkbox" value="1" />
         <p id="name"> <b>Women's Volleyball Club</b></p>
         <i class="fa-solid fa-volleyball" style="font-size:50px;"></i>
-    </section>
+    </div>
 
-    <section class="club" id="innod-saved" style="display:none;">
-        <input
-        type="checkbox"
-        id="innod"
-        name="innod" />
+    <div class="club">
+        <input type="checkbox" value="2" />
         <p id="name"> <b>Innovation Design Club</b></p>
         <i class="fa fa-cogs" aria-hidden="true" style="font-size:50px;"></i>
-    </section>
+    </div>
 
-    <section class="club" id="rdc-saved" style="display:none;">
-        <input
-        type="checkbox"
-        id="rdc"
-        name="rdc" />
+    <div class="club">
+        <input type="checkbox" value="3" />
         <p id="name"><b>Red Cross Club</b></p>
         <i class="fa-solid fa-square-plus" style="font-size:50px;"></i>
-    </section>
+    </div>
 
-    <section class="club" id="spark-saved" style="display:none;">
-        <input
-        type="checkbox"
-        id="spark"
-        name="spark" />
+    <div class="club">
+        <input type="checkbox" value="4" />
         <p id="name"><b>Spark SC</b></p>
         <i class="fa-solid fa-wand-sparkles"style="font-size:50px;"></i>
-    </section>
+    </div>
 
-    <section class="club" id="bsa-saved" style="display:none;">
-        <input
-        type="checkbox"
-        id="bsa"
-        name="bsa" />
+    <div class="club">
+        <input type="checkbox" value="5" />
         <p id="name"><b>Black Student Alliance</b></p>
         <i class="fa-solid fa-hand-back-fist"style="font-size:50px;"></i>
-    </section>
+    </div>
 
 </div>
 
@@ -120,58 +103,8 @@
     <a href = "saved.html"><i class="fa fa-star" aria-hidden="true" style="font-size:30px;color:white;"></i></a>
 </div>
 
-
-
-
 </main>
 
-<div id="contentContainer" style="display:none;"></div>
-
-<script>
-
-// Function to sync checkbox state from localStorage
-function syncCheckboxState() {
-            document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-                const state = localStorage.getItem(checkbox.id);
-                console.log('attached');
-                if (state !== null) {
-                    checkbox.checked = (state === 'true');
-                    console.log('sync');
-                }
-            });
-        }
-
-        // Sync checkbox state when page loads
-        syncCheckboxState();
-        
-        // Add event listeners to checkboxes to update localStorage
-        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-            checkbox.addEventListener('change', function() {
-                localStorage.setItem(this.id, this.checked);
-                //if (!this.checked) {
-                //localStorage.removeItem(this.id); // Remove item if unchecked
-                //console.log('remove');
-                //}
-            });
-        });
-
-    // Fetch the content of the other HTML file
-    fetch('clubsearch.html')
-        .then(response => response.text())
-        .then(html => {
-            // Inject the content into the current document
-            document.getElementById('contentContainer').innerHTML = html;
-            console.log('content container');
-            // Add event listener for when the injected content is fully loaded
-            document.getElementById('contentContainer').addEventListener('DOMContentLoaded', function() {
-                // Now you can interact with the injected content here
-                // For example, you can access its elements and perform operations
-            });
-        })
-        .catch(error => console.error('Error fetching content:', error));
-</script>
-
-<script src="saved.js"></script> 
 
 </body>
 </html>

@@ -1,49 +1,46 @@
-document.addEventListener('DOMContentLoaded', function() {
+$(function(){	
+	
+	let checkboxes = [];
 
-    // Define an array of checkbox IDs and corresponding localStorage keys
-    const checkboxes = [
-        { id: 'tmg', localStorageKey: 'tmgState' },
-        { id: 'wvc', localStorageKey: 'wvcState' },
-        { id: 'innod', localStorageKey: 'innodState' },
-        { id: 'rdc', localStorageKey: 'rdcState' },
-        { id: 'spark', localStorageKey: 'sparkState' },
-        { id: 'bsa', localStorageKey: 'bsaState' }
-    ];
+	if (localStorage.getItem('checkboxes') != null){
+		checkboxes = localStorage.getItem('checkboxes').split(",");
+	}
 
-    // Function to toggle div visibility and update Local Storage
-    function toggleDiv(checkbox, localStorageKey) {
-        let divId = checkbox.id + '-saved';
-        let div = document.getElementById(divId);
+	//Club List page
+	$("#club-list .club input:checkbox").each(function() { 
+		this.checked = (checkboxes[$(this).val()] == "true");
+	});
 
-        if (checkbox.checked) {
-            div.style.display = 'block'; 
-            localStorage.setItem(localStorageKey, 'checked');
-        } else {
-            div.style.display = 'none';
-            localStorage.setItem(localStorageKey, 'unchecked');
-        }
-    }
+	$("#club-list .club input:checkbox").change(function() {
+		checkboxes[$(this).val()] = this.checked;
+		localStorage.setItem('checkboxes',checkboxes.toString());
+	});
 
-    // Initialize checkboxes based on Local Storage
-    checkboxes.forEach(({ id, localStorageKey }) => {
-        let checkbox = document.getElementById(id);
-        let checkboxState = localStorage.getItem(localStorageKey);
-        
-        if (checkboxState === 'checked') {
-            checkbox.checked = true;
-            document.getElementById(`${id}-saved`).style.display = 'block';
-        }
-    });
 
-    // Add event listeners to checkboxes to toggle div visibility and update Local Storage
-    checkboxes.forEach(({ id, localStorageKey }) => {
-        let checkbox = document.getElementById(id);
-        checkbox.addEventListener('change', function() {
-            toggleDiv(checkbox, localStorageKey);
-        });
-    });
+	//Saved Club page
+	//$("#saved-clubs .club").hide();
+	$("#saved-clubs .club input:checkbox").each(function() { 
+		if(checkboxes[$(this).val()] == "true"){
+			this.checked = true;
+			$(this).parent().show();
+		}
+		else{
+			this.checked = false;
+			$(this).parent().hide();
+		}
+	});
 
+	$("#saved-clubs .club input:checkbox").change(function() {
+		checkboxes[$(this).val()] = this.checked;
+		if(!this.checked){
+			$(this).parent().slideDown(500).fadeOut(400);
+		}
+		localStorage.setItem('checkboxes',checkboxes.toString());
+	});
+
+	//console.log(checkboxes);
 });
+
 
 $(function() {
  
