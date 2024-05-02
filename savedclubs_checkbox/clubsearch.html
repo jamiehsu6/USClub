@@ -10,6 +10,8 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        <link rel="stylesheet" type="text/css" href="../css/main.css">
         <script src="jquery-3.7.1.min.js"></script>
         <script src="saved.js"></script> 
+        <script src="../js/main.js"></script>
+
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
@@ -20,6 +22,27 @@
             <div class = "dashboard-top">
                 <img src = "img/uscclubhublogo.png">
             </div>
+            <!--profile stuff-->
+            <div id="user-menu">
+                <a href="../index.html">Sign Out</a>
+            </div>
+            <div id="icon">
+                <div id="icon-button"></div>
+            </div>
+            <!--/////////PROFILE IMAGE Javascript here///////////-->
+            <script>
+                var selectedProfile = localStorage.getItem('profile');
+
+                // setting backgroundImg
+                if (selectedProfile === 'profile1') {
+                    document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile1.png')";
+                } else if (selectedProfile === 'profile2') {
+                    document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile2.png')";
+                } else if (selectedProfile === 'profile3') {
+                    document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile3.png')";
+                }
+            </script>
+            <!--profile stuff END-->
 
             <br>
 
@@ -148,9 +171,9 @@
     </div>
     <div class="navbar">
         <div class = "icon-container">
-        <a href = "../dashboard/index.html"><i class="fa fa-home" aria-hidden="true" style="font-size:30px;color:white;"></i></a>
-        <a href = "../savedclubs_checkbox/clubsearch.html"><i class="fa fa-bars" aria-hidden="true" style="font-size:25px;color:white;"></i></a>
-        <a href = "../savedclubs_checkbox/saved.html"><i class="fa fa-star" aria-hidden="true" style="font-size:25px;color:white;"></i></a>
+        <a href = "../dashboard/index.html"><i class="fa fa-home" aria-hidden="true" style="font-size:35px;color:white;"></i></a>
+        <a href = "../savedclubs_checkbox/clubsearch.html"><i class="fa fa-bars" aria-hidden="true" style="font-size:30px;color:white;"></i></a>
+        <a href = "../savedclubs_checkbox/saved.html"><i class="fa fa-star" aria-hidden="true" style="font-size:30px;color:white;"></i></a>
     </div>
   
       

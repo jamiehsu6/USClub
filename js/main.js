@@ -19,8 +19,6 @@ $(function(){
 
 });
 
-// Function to change profile background
-
 var selectedProfile = localStorage.getItem('selectedProfile');
 
 // Set the background image of the #icon-button element based on the selected profile

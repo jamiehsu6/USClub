@@ -36,11 +36,13 @@ main{
     overflow: hidden;
     position: fixed;
     bottom: 15px;
-    width: 15%;
-    right: 630px;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
     display: block;
     border-radius: 50px;
-    height: 50px;
+    height: 60px;
   }
   
   /*.navbar a {
@@ -56,8 +58,8 @@ main{
   .icon-container {
     display: flex;           
     justify-content: center;  
-    gap: 35px;  
-    padding-top: 10px;  
+    gap: 65px;  
+    padding-top: 13px;  
   }
 
   
@@ -111,7 +113,7 @@ main{
     border-radius: 50%;
     cursor: pointer;
     right: 0px;
-    background-image: url('../login/profile/profile1.png');
+    background-image: url('../login/profile/profile.png');
 }
 #user-menu {
     border-radius: 5px;
