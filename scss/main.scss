@@ -25,10 +25,19 @@ main{
     font-family: $font-style;
     width: 100%;
     max-width: 500px;
-    min-height: 150vh;
+    min-height: 110vh;
     margin: 0 auto;
     background-color: white;
    
+}
+
+.indexTotal{
+    min-height: 140vh;
+
+}
+
+.clubSearchTotal{
+    min-height: 120vh;
 }
 ///////////////////navBar///////////////////////////
 .navbar {
