@@ -111,26 +111,29 @@ main{
     }
 }
 #icon {
-    position: absolute;
+    position: relative;
     top: 37px;
-    margin-left:423px;
 }
-#icon-button {        
+#icon-button {    
+    position: absolute;    
     width: 55px;
     height: 55px;
     background-size: cover;
     border-radius: 50%;
     cursor: pointer;
-    right: 0px;
+    right: 25px;
     background-image: url('../login/profile/profile.png');
+}
+#user-menu-wrapper {
+    position: relative;
 }
 #user-menu {
     border-radius: 5px;
-    margin-left: 380px;
+    right: 25px;
     padding: 10px;
     background-color: white;
     filter:drop-shadow(2px 2px #9b9b9bb5);
-    top: 95px;
+    top: 93px;
     position: absolute;
     a {
         text-decoration: none;

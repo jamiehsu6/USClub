@@ -19,31 +19,33 @@
     <main>
         <div class = "clubSearchTotal">
         <body>
+          <!--profile stuff-->
+          <div id="user-menu-wrapper">
+            <div id="user-menu">
+              <a href="../index.html">Sign Out</a>
+            </div>
+          </div>
+          <div id="icon">
+              <div id="icon-button"></div>
+          </div>
+          <!--/////////PROFILE IMAGE Javascript here///////////-->
+          <script>
+            var selectedProfile = localStorage.getItem('profile');
+
+            // setting backgroundImg
+            if (selectedProfile === 'profile1') {
+                document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile1.png')";
+            } else if (selectedProfile === 'profile2') {
+                document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile2.png')";
+            } else if (selectedProfile === 'profile3') {
+                document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile3.png')";
+            }
+          </script>
+          <!--profile stuff END-->
 
             <div class = "dashboard-top">
                 <img src = "img/uscclubhublogo.png">
             </div>
-            <!--profile stuff-->
-            <div id="user-menu">
-                <a href="../index.html">Sign Out</a>
-            </div>
-            <div id="icon">
-                <div id="icon-button"></div>
-            </div>
-            <!--/////////PROFILE IMAGE Javascript here///////////-->
-            <script>
-                var selectedProfile = localStorage.getItem('profile');
-
-                // setting backgroundImg
-                if (selectedProfile === 'profile1') {
-                    document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile1.png')";
-                } else if (selectedProfile === 'profile2') {
-                    document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile2.png')";
-                } else if (selectedProfile === 'profile3') {
-                    document.getElementById('icon-button').style.backgroundImage = "url('../login/profile/profile3.png')";
-                }
-            </script>
-            <!--profile stuff END-->
 
             <br>
 

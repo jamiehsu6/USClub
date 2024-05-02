@@ -21,16 +21,20 @@
 
 <main>
   <body>
-    <div class = "dashboard-top">
-        <img src = "img/uscclubhublogo.png">
-    </div>
     <!--profile stuff-->
-    <div id="user-menu">
-        <a href="../index.html">Sign Out</a>
+    <div id="user-menu-wrapper">
+        <div id="user-menu">
+            <a href="../index.html">Sign Out</a>
+        </div>
     </div>
     <div id="icon">
         <div id="icon-button"></div>
     </div>
+    <!--profile end-->
+    <div class = "dashboard-top">
+        <img src = "img/uscclubhublogo.png">
+    </div>
+    
     <!--/////////PROFILE IMAGE Javascript here///////////-->
     <script>
         var selectedProfile = localStorage.getItem('profile');
